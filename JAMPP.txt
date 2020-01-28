@@ -27,16 +27,13 @@ per_event AS (
     GROUP BY 1
 
 
-The events table statement first create a new column which
-is the next timestamp for some action “4” , so we can substract
-then the next timestamp from the current one (this query is made 
-by device_id and order by time_stamp so as to be sure that is just the next 
-near value ). Once made the substraction between timestamp we
-calculate the average time difference between when user made action 4 against his
-next time he performs action.
+The events table statement first create a new column which is the next timestamp for some action “4” , so we can substract
+then the next timestamp from the current one (this query is made by device_id and order by time_stamp so as to be sure that is just the next near value ). Once made the substraction between timestamp wecalculate the average time difference between when user made action 4 against hisnext time he performs action.
 
 
-This metrics is relevant for the business side because provides you information about the performance of the app. In the case that the action is “purchase” , the metrics gives you a sense of how fast the user place money in your app again ( in some way you are monitoring the engagement , the stickiness).
+This metrics is relevant for the business side because provides you information about the performance of the app. In the case
+that the action is “purchase” , the metrics gives you a sense of how fast the user place money in your app again ( in some way
+you are monitoring the engagement , the stickiness).
 
 
 The query without a WITH function would be :
