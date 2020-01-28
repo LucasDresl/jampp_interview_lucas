@@ -28,7 +28,9 @@ per_event AS (
 
 
 The events table statement first create a new column which is the next timestamp for some action “4” , so we can substract
-then the next timestamp from the current one (this query is made by device_id and order by time_stamp so as to be sure that is just the next near value ). Once made the substraction between timestamp wecalculate the average time difference between when user made action 4 against hisnext time he performs action.
+then the next timestamp from the current one (this query is made by device_id and order by time_stamp so as to be sure that is 
+just the next near value ). Once made the substraction between timestamp wecalculate the average time difference between when 
+user made action 4 against hisnext time he performs action.
 
 
 This metrics is relevant for the business side because provides you information about the performance of the app. In the case
@@ -63,7 +65,11 @@ GROUP BY 1
 Question 3 )
 
 
-The amount of pirates to send for look for the treasure can be represented by the following function : f(# monedas encontradas) = round((# monedas encontradas / 2 ) + 1). In words means that the ideal scenario for the captain of pirates is always to send the amount of pirates which represent the half of coins founded plus one. In this scenario, all the pirates send to find the treasure will receive only one coin and all the other coins left will be for the captain of the pirates, so he will received the half of coins find minus one. 
+The amount of pirates to send for look for the treasure can be represented by the following function : f(# coins 
+finded) = round((# coins finded / 2 ) + 1). In words means that the ideal scenario for the captain of pirates is 
+always to send the amount of pirates which represent the half of coins founded plus one. In this scenario, all the pirates 
+send to find the treasure will receive only one coin and all the other coins left will be for the captain of the pirates, so 
+he will received the half of coins find minus one. 
 
 
 Aclaration: In the case that the amount of coins are odd the numbers of pirates it would be round up
